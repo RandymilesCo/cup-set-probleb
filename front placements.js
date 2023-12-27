@@ -1,4 +1,9 @@
 import config from './next.config'
+const nextConfig = {
+  compiler: {
+    emotion: true,
+    styledComponents: true
+  },
 testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/\\.next/'],
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
@@ -17,3 +22,4 @@ testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/\\.next/'],
         https://jestjs.io/docs/webpack#mocking-css-modules */
     '\\.svg$': '<rootDir>/__mocks__/svg.js',
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+      
