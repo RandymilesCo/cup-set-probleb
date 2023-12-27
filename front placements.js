@@ -1,4 +1,5 @@
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/\\.next/'],
+import config from './next.config'
+testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/\\.next/'],
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
